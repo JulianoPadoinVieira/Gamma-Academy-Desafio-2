@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produto</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body id="principal">
+
+    <h1>Cadastro de Produto</h1>
+
+    <form id="formProduto">       
+        
+        <fieldset>
+            <div class="divMain">
+            <legend>Favor preencher:</legend>
+
+            <div class="tipoProduto">
+                <label for="tipoDeProduto">Tipo: </label>
+                <select class="selectTipoProduto" name="tipo" id="tipo">
+                    <option value="Selecionar" >Selecionar
+                    </option>
+                    <option value="Notebook">Notebook
+                    </option>
+                    <option value="Desktop">Desktop
+                    </option>
+                    <option value="placa De Vídeo">Placa de Vídeo
+                    </option>
+                    <option value="Placa Mãe">Placa Mãe
+                    </option>
+                    <option value="Memória">Memória
+                    </option>
+                </select>
+            </div>
+            <br /> 
+
+            <!-- Estado do produto -->
+            <fieldset class="legendEstadoProduto">
+                <legend style="margin-left: 20px;">Estado:</legend>
+                <label class="radio">
+                        <input type="radio" name="radio" value="novo"/>Novo                       
+                </label>
+                <br />
+                <label class="radio">
+                        <input type="radio" name="radio" value="usado" />Usado
+                </label>
+            </fieldset>            
+            <!-- --- Estado do produto --- -->
+
+            <div class="marcaModelo">
+                <label for="marca" >Marca: </label>
+                <br />
+                <input type="text" id="marca" required></input>
+                <br />
+    
+                <label for="modelo">Modelo: </label>
+                <br />
+                <input type="text" id="modelo" required></input>
+                <br />
+            </div>
+
+            <div class="btnLimparCadastrar">
+                
+                <a href="../index.html">
+                    <img src="../assets/voltar2.png" alt="" class="icones" title="voltar">
+                </a>
+                <a href="#">
+                    <img src="../assets/limpar-limpo.png" alt="" class="icones" title="Limpar campos" onclick="limparCampos()">
+                </a>
+                <a href="../cliente/index.html">
+                    <img src="../assets/cliente.png" alt="" class="icones" title="Produtos">
+                </a>                
+                
+                <button type="submit" name="enviar" value="Enviar" id="enviar"><img src="../assets/salvar-disco.png" alt="" class="salvar" title="salvar"></button>
+
+            </div>
+        </div>
+            
+        </fieldset>
+
+        <div class="voltarProduto">
+
+        </div>
+
+        <script src="./scripts.js"></script>
+    
+    </form> 
+    
+    
+</body>
+</html>

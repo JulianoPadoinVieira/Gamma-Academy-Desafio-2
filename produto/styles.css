@@ -1,0 +1,197 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {    
+    font-size: 1.5rem;
+    margin: auto;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(149, 151, 146) 35%, rgb(26, 26, 26) 100%);
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;   
+    /* background: linear-gradient(90deg, rgb(26, 26, 26) 0%, rgb(149, 151, 146) 35%, rgb(255, 255, 255) 100%);  */
+}
+
+form {
+    width: 22vw;
+    height: 73vh;
+    margin: auto;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(149, 151, 146) 55%, rgb(26, 26, 26) 100%);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tipoProduto {
+    margin-top: 15px;
+}
+
+.divMain {
+    margin-left: 25px;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+
+.legendEstadoProduto {
+    height: 18vh;
+    width: 15vw;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 25%;
+    height: 1.5rem;
+}
+
+.novoUsado {
+    background-color: rgb(155, 246, 17);
+    /* display: inline; */
+    /* margin-left: 20px;
+    background-color: rgba(149, 151, 146);
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+    margin-top: 1rem; */
+}
+
+label {   
+    padding-top: 5px;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+
+
+.selectTipoProduto {
+    font-size: 1.5rem;
+    background-color: rgb(212, 212, 212);
+    border-radius: 5px;
+}
+
+input {
+    margin: 10px 0px 10px 0;
+    font-size: 1.5rem;
+    width: 15vw;
+    height: 2rem;
+    border-radius: 10px;
+} 
+
+/* button {
+    height: 3rem;
+    width: 12rem;
+    font-size: 2rem;
+    border-radius: 10px;
+} */
+
+/* .radioInput {
+    height: 2rem;
+    width: 2rem;
+} */
+
+
+/* .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+} */
+
+.btnLimparCadastrar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;  
+    margin-bottom: 10px;     
+}
+
+.voltarProduto {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.icones {
+    width: 65px;
+    margin: 15px 25px 5px -40px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+button {
+    border-radius: 10px;
+    margin: 5px 0 0 -40px;
+    background-color: transparent;
+    border: 3px solid rgb(255, 0, 0);
+}
+
+.salvar {
+    width: 60px;
+    border-radius: 10px;
+}
+
+
+
+
+/* .ami div {display:none}
+.ami:hover div {display:block}
+<a class=ami href="#">Please hover me <div>I show only when you over</div></a> */
+
+@media (max-width: 650px) {
+    body {    
+        font-size: 1rem;
+    }  
+    
+    form {
+        width: 80vw;
+        height: 75vh;
+    }
+
+    legend {
+        font-size: 1.2rem;
+        font-weight: bold;
+        
+    }
+
+    .legendEstadoProduto {        
+        width: 35vw;
+    }
+
+    input {
+        font-size: 1.2rem;
+        width: 63vw;
+        height: 1.7rem;
+    }
+
+    .icones {
+        width: 50px;
+    }
+    
+    .salvar {
+        width: 47px;
+    }
+
+
+
+
+
+   
+}
